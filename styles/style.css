@@ -47,7 +47,7 @@ ol {
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
+  /*  font-size: 18px; */
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
@@ -59,6 +59,8 @@ ol {
   gap: 30px;
   height: 534px;
   inline-size: 1140px;
+  margin: 0;
+  padding: 0;
 }
 .search-form {
   display: flex;
@@ -78,15 +80,11 @@ ol {
 }
 .content__details {
   display: grid;
-  height: 534px;
+  height: 530px;
   gap: 26px;
   width: 100%;
 }
-.content__video-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
+
 .result__video-container {
   width: 711px;
   height: 386px;
@@ -95,8 +93,8 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  width: 194px;
-  height: 103px;
+  width: 196px;
+  height: 102px;
 }
 .result__video {
   width: 100%;
@@ -104,3 +102,46 @@ ol {
   object-fit: cover;
   object-position: center;
 }
+
+/*.search-form__fieldset-title {
+}*/
+.search-form__fieldset {
+  /* предлагали это сделать через .search-form__fieldset-title. Нужно сделать было отступы*/
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+.content__accent {
+  opacity: 0.2;
+}
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+   line-height:115%;
+}
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+.content__video-card {
+display: flex;
+justify-content: space-between;
+align-items: start;
+/* overflow: ; */
+}
+.content__video-card-title {
+  flex-grow: 1;
+  /* white-space: nowrap;  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content__video-card-description{
+  display: flex;
+  flex-grow: 1;
+}
+/* .content__list-item{
+  display: flex;
+
+} */
