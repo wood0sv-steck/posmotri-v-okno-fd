@@ -41,14 +41,21 @@
 }
 .content__video-card-title {
   font-family: "Oswald";
-  font-weight: 700;
-  font-size: 40px; /*30px*/
+  font-weight: 400;
+  font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
 }
 .content__video-card-description {
   font-family: "Fira Sans Condensed";
-  font-weight: 400;
+  font-weight: 200;
   font-size: 18px;
   line-height: 16.2px;
+}
+.button {
+  font-family: "Fira Sans Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
 }

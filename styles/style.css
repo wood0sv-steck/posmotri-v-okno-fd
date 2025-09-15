@@ -84,7 +84,6 @@ ol {
   gap: 26px;
   width: 100%;
 }
-
 .result__video-container {
   width: 711px;
   height: 386px;
@@ -93,8 +92,8 @@ ol {
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  width: 196px;
-  height: 102px;
+  min-inline-size: 194px;
+  block-size: 103px;
 }
 .result__video {
   width: 100%;
@@ -103,13 +102,12 @@ ol {
   object-position: center;
 }
 
-/*.search-form__fieldset-title {
-}*/
 .search-form__fieldset {
-  /* предлагали это сделать через .search-form__fieldset-title. Нужно сделать было отступы*/
+  /* .search-form__fieldset-title предлагали это сделать через .search-form__fieldset-title. Нужно сделать было отступы*/
   display: flex;
   flex-direction: column;
-  gap: 7.5px;
+  gap: 6.5px;
+  border: 0;
 }
 .content__accent {
   opacity: 0.2;
@@ -117,31 +115,106 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #fff;
-   line-height:115%;
+  line-height: 115%;
 }
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
+  row-gap: 6px;
   flex-grow: 1;
-  text-transform: uppercase;
+  flex-basis: 0;
+  overflow: hidden;
 }
+
 .content__video-card {
-display: flex;
-justify-content: space-between;
-align-items: start;
-/* overflow: ; */
+  display: flex;
+  align-items: flex-start;
 }
 .content__video-card-title {
-  flex-grow: 1;
-  /* white-space: nowrap;  */
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.content__video-card-description{
-  display: flex;
-  flex-grow: 1;
+.content__video-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  max-height: 16.2px;
 }
-/* .content__list-item{
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.search-form__checkbox-list {
   display: flex;
-
-} */
+  gap: 17px;
+}
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+}
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.search-form__textfield {
+  width: 225px;
+  height: 27px;
+  gap: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  padding: 1px;
+}
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.search-form__checkbox:checked {
+  opacity: 1;
+}
+.search-form__label:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.search-form__label:has(:focus-visible:not(:focus)) {
+  outline: 1px solid #fff;
+}
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.search-form__submit-button {
+  display: flex;
+  align-self: end;
+  padding: 6px 73.5px;
+}
+.more-button {
+  padding: 6px 142px;
+}
