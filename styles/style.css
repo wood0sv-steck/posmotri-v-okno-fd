@@ -46,7 +46,9 @@ ol {
   align-content: center;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", "sans-serif";
+    font-family: "Fira Sans Condensed", Verdana, Geneva, Tahoma, sans-serif;
+
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
@@ -187,7 +189,7 @@ ol {
   align-items: center;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid #f90505;
   }
 .search-form__pseudo-checkbox::after {
   content: "";
@@ -197,10 +199,21 @@ ol {
   opacity: 0;
 }
 /*.search-form__pseudo-checkbox:checked не работает */
-input[type="checkbox"]:checked + span {
+/* input[type="checkbox"]:checked + span {
   background: #fff;
   opacity:1;
-}
+} */  
+.search-form__checkbox:checked{
+  background: #fff;
+  opacity:1; 
+ } 
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+    content: '';
+    min-inline-size: 15px;
+    min-block-size: 15px;
+    background-color: #fff;
+} 
 .search-form__label:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -221,13 +234,8 @@ input[type="checkbox"]:checked + span {
 .more-button {
   padding: 6px 142px;
 }
-
-.search-form__label:last-child :hover {
+.search-form__label:last-of-type :hover {
+  color:#f90505;
   cursor: pointer;
 }
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-    content: '';
-    min-inline-size: 15px;
-    min-block-size: 15px;
-    background-color: #fff;
-} 
+
