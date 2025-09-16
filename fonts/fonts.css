@@ -25,7 +25,7 @@
   font-style: normal;
 }
 .page {
-  font-family: "Fira Sans Condensed", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Fira Sans Condensed", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
 .search-form__fieldset-title {
@@ -37,8 +37,7 @@
   font-family: "Oswald";
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
-  letter-spacing: 0%;
+  line-height: 93%;
   text-transform: uppercase;
 }
 .content__video-card-title {
@@ -54,8 +53,8 @@
   line-height: 16.2px;
 }
 .button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  text-align: center;
+font-family: "Fira Sans Condensed";
+font-weight: 700;
+font-size: 18px;
+text-align: center;
 }
