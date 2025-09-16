@@ -25,7 +25,7 @@
   font-style: normal;
 }
 .page {
-  font-family: "Fira Sans Condensed", "Verdana", "Geneva", "Tahoma", "sans-serif";
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .search-form__fieldset-title {
@@ -57,4 +57,9 @@ font-family: "Fira Sans Condensed";
 font-weight: 700;
 font-size: 18px;
 text-align: center;
+}
+.search-form__textfield{
+font-family: "Fira Sans Condensed";
+font-weight: 400;
+font-size: 18px;
 }
