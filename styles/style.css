@@ -41,9 +41,10 @@ ol {
 }
 
 .page {
+  font-family: "Fira Sans Condensed", sans-serif;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   background-color: #1b1919;
@@ -55,7 +56,6 @@ ol {
   grid-template-columns: 711px 399px;
   place-items: end;
   gap: 30px;
-  height: 534px;
   margin: 0;
   padding: 0;
   inline-size: 1140px;
@@ -69,8 +69,9 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
+  block-size: 298px;
   gap: 30px;
-  overflow: hidden scroll;
+  overflow: auto;
 }
 .content__list {
   display: flex;
@@ -81,7 +82,6 @@ ol {
   display: grid;
   gap: 26px;
   width: 100%;
-  height: 530px;
 }
 .result__video-container {
   position: relative;
@@ -110,7 +110,7 @@ ol {
   border: 0;
 }
 .content__accent {
-  opacity: 0.2;
+  color: #545050;
 }
 .content__card-link {
   color: #fff;
