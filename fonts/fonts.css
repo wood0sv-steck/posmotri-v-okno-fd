@@ -25,38 +25,3 @@
   font-style: normal;
 }
 
-.search-form__fieldset-title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-}
-.title {
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 93%;
-  text-transform: uppercase;
-}
-.content__video-card-title {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-.content__video-card-description {
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 16.2px;
-}
-.button {
-  font-family: "Fira Sans Condensed";
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-}
-.search-form__textfield {
-  font-family: "Fira Sans Condensed";
-  font-weight: 400;
-  font-size: 18px;
-}
