@@ -177,6 +177,7 @@ ol {
   outline-offset: 2px;
 }
 .search-form__textfield {
+  color: currentColor;
   width: 224px;
   height: 26px;
   border-top: 1px solid #fff;
